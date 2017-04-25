@@ -10,8 +10,8 @@ configure terminal
 interface Serial <INTERFACE_NUMBER>
 !
 ! Configure serial interface clock (bits)
-! Check out that the interface is a DCE.
-! Otherwise, it is not needed.
+! Check out that the interface is a DCE
+! Otherwise, it is not needed
 ! Example of rate: 128000
 !
 clock rate <CLOCK_RATE>
