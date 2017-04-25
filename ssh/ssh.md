@@ -11,9 +11,9 @@
 ## Configure virtual terminals
 
     Switch(config)# line vty 0 15
-    Switch(config)# transport input ssh
-    Switch(config)# login local
-    Switch(config)# exit
+    Switch(config-line)# transport input ssh
+    Switch(config-line)# login local
+    Switch(config-line)# exit
 
 ## Encryption module
 
