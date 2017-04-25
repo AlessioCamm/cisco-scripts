@@ -4,7 +4,7 @@
 
     Router(config)# router eigrp 1
 
-## router-id for this OSPF process
+## router-id for this EIGRP process
 
     Router(config-router)# router-id <EIGRP_ID>
 
