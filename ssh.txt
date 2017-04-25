@@ -1,0 +1,40 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! SSH CONFIGURATION !!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Turn on privileged commands
+enable
+!
+! Enter configuration mode
+configure terminal
+!
+! Set system's network name
+! Example: R1
+hostname <NAME_ROUTER>
+!
+! Define the default domain name
+ip domain-name <NAME.com>
+!
+! Establish User Name Authentication
+username <SSH_USERNAME> privilege 15 secret <SSH_PASSWORD>
+!
+! Configure virtual terminals
+line vty 0 15
+transport input ssh
+login local
+exit
+!
+! Encryption module
+crypto key generate rsa
+!
+! Specify SSH time-out interval
+ip ssh time-out 30
+!
+! Specify number of authentication retries
+ip ssh authentification-retries 3
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! SAVING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Exit from configure mode
+exit
+!
+! Copy from current system configuration to startup configuration
+copy running-config startup-config

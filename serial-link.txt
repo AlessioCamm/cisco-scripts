@@ -28,7 +28,7 @@ ip address <INTERFACE_IP> <INTERFACE_MASK>
 ! Message digest authentication password (key) for OSPF
 ip ospf message-digest-key 1 md5 <PASSWORD>
 !
-! Activate the selected interface
+! Enable the selected interface
 no shutdown
 !
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! SAVING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

@@ -1,4 +1,4 @@
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! BASIC ROUTER CONFIGURATION !!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!! BASIC ROUTER CONFIGURATION !!!!!!!!!!!!!!!!!!!!
 !
 ! Turn on privileged commands
 enable
