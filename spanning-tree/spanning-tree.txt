@@ -1,0 +1,34 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!! SPANNING TREE CONFIGURATION !!!!!!!!!!!!!!!!!!!!
+!
+! Turn on privileged commands
+enable
+!
+! Enter configuration mode
+configure terminal
+!
+! Configure this switch as primary root for this spanning tree
+spanning-tree vlan <BEGIN-END> root primary
+!
+! Per-Vlan rapid spanning tree mode
+spanning-tree mode rapid-pvst
+!
+! Change an interface's spanning tree port priority
+interface <INTERFACE_NUMBER>
+spanning-tree vlan <BEGIN-END> port-priority <NUMBER>
+!
+! Exit from interface configuration mode
+exit
+!
+! Enable an interface to move directly to forwarding on link up
+!
+interface range <INTERFACE_NUMBER>
+spanning-tree portfast
+spanning-tree bpduguard enable
+!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! SAVING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Exit from configure mode
+exit
+!
+! Copy from current system configuration to startup configuration
+copy running-config startup-config

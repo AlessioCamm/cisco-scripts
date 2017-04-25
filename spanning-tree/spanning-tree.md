@@ -17,9 +17,9 @@
 
 ## Enable an interface to move directly to forwarding on link up
 
-    Switch(config-if)# interface <INTERFACE_NUMBER>
-    Switch(config-if)# spanning-tree portfast
+    Switch(config-if)# interface range <BEGIN-END>
+    Switch(config-if-range)# spanning-tree portfast
 
 ### Enable BPDU guard for this interface
 
-    Switch(config-if)# spanning-tree bpduguard enable
+    Switch(config-if-range)# spanning-tree bpduguard enable
