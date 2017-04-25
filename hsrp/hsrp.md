@@ -9,7 +9,7 @@
 
 ### Set priority level
 
-    Router(config-if)# standby 1 priority <HSRP_VALUE>
+    Router(config-if)# standby 1 priority <HSRP_PRIORITY>
 
 ### Overthrow lower priority Active routers
 

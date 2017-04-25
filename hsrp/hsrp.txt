@@ -10,7 +10,7 @@ configure terminal
 ! Check out that the standby and the active routers has the same IP address
 ! When you have finish to configure the routers, change the default gateway
 ! on computers to the same <HSRP_IP> and disable either of the Ethernet links
-! to test if you can still ping.
+! to test if you can still ping
 interface <INTERFACE_NUMBER>
 standby 1 ip address <HSRP_IP>
 !
