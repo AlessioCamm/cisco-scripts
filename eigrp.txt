@@ -1,4 +1,4 @@
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! OSPF CONFIGURATION !!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! EIGRP CONFIGURATION !!!!!!!!!!!!!!!!!!!!!!!!!
 !
 ! Turn on privileged commands
 enable
@@ -7,21 +7,13 @@ enable
 configure terminal
 !
 ! Enable a routing process
-router ospf 1
-!
-! Calculate OSPF interface cost according to bandwidth
-! Check out that every routers has the same reference bandwidth
-!
-auto-cost reference-bandwidth 10000
-!
-! OSPF area parameters
-area 0 authentication message-digest
+router eigrp 1
 !
 ! Suppress routing updates on an interface
 passive-interface <INTERFACE_NUMBER>
 !
 ! Enable routing on an IP network
-network <IP> <OSPF_WILD_CARD_BITS> area 0
+network <IP> <EIGRP_WILD_CARD_BITS>
 !
 ! Exit from routing protocol configuration mode
 exit
