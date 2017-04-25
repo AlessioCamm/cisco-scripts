@@ -9,7 +9,7 @@
 
 ### Set priority level
 
-    Router(config-if)# glbp 1 priority <GLBP_PRIORITY
+    Router(config-if)# glbp 1 priority <GLBP_PRIORITY>
 
 ### Overthrow lower priority Active routers
 

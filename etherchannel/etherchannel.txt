@@ -1,0 +1,31 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ETHERCHANNEL CONFIGURATION !!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Turn on privileged commands
+enable
+!
+! Enter configuration mode
+configure terminal
+!
+! Set trunking mode to TRUNK unconditionally
+interface range <BEGIN-END>
+switchport mode trunk
+!
+! Select the channel protocol (LACP, PAgP)
+channel-protocol <PROTOCOL>
+!
+! Etherchannel/port bundling configuration
+channel-group <GROUP_NUMBER> mode <MODE>
+!
+! Enable the selected interface
+no shutdown
+!
+! Exit from interface configuration mode
+exit
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! SAVING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Exit from configure mode
+exit
+!
+! Copy from current system configuration to startup configuration
+copy running-config startup-config
