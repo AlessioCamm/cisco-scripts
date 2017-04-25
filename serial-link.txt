@@ -1,0 +1,40 @@
+!!!!!!!!!!!!!!!!!!!!!! SERIAL LINK CONFIGURATION !!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Turn on privileged commands
+enable
+!
+! Enter configuration mode
+configure terminal
+!
+! Select an interface to configure
+interface Serial <INTERFACE_NUMBER>
+!
+! Configure serial interface clock (bits)
+! Check out that the interface is a DCE.
+! Otherwise, it is not needed.
+! Example of rate: 128000
+!
+clock rate <CLOCK_RATE>
+!
+! Set bandwidth (kilobits) informational parameter
+! Check out with the clock rate
+! Example: bandwidth for a clock rate of 128000 is 128
+!
+bandwidth <BANDWIDTH>
+!
+! Set the IP address of an interface
+ip address <INTERFACE_IP> <INTERFACE_MASK>
+!
+! Message digest authentication password (key) for OSPF
+ip ospf message-digest-key 1 md5 <PASSWORD>
+!
+! Activate the selected interface
+no shutdown
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! SAVING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Exit from configure mode
+exit
+!
+! Copy from current system configuration to startup configuration:
+copy running-config startup-config
