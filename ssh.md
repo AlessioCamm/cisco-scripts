@@ -1,0 +1,28 @@
+# SSH configuration
+
+## Define the default domain name
+
+    Switch(config)# ip domain-name <NAME.com>
+
+## Establish User Name Authentification
+
+    Switch(config)# username <SSH_USERNAME> privilege 15 secret <SSH_PASSWORD>
+
+## Configure virtual terminals
+
+    Switch(config)# line vty 0 15
+    Switch(config)# transport input ssh
+    Switch(config)# login local
+    Switch(config)# exit
+
+## Encryption module
+
+    Switch(config)# crypto key generate rsa
+
+## Specify SSH time-out interval
+
+    Switch(config)# ip ssh time-out 30
+
+## Specify number of authentication retries
+
+    Switch(config)# ip ssh authentification-retries 3
