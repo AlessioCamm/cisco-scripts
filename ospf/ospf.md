@@ -5,12 +5,10 @@
     Router(config)# router ospf 1
 
 ## router-id for this OSPF process
-## Example: 1.1.1.1
 
     Router(config-router)# router-id <OSPF_ID>
 
 ## Calculate OSPF interface cost according to bandwidth
-## Check out that every routers has the same reference bandwidth
 
     Router(config)# auto-cost reference-bandwidth 10000
 
