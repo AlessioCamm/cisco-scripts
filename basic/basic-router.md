@@ -23,20 +23,42 @@
 ## Configure a primary terminal line
 
     Router(config)# line console 0
+
+### Set a password
+
     Router(config-line)# password <PASSWORD_CONSOLE>
+
+### Set the EXEC timeout
+
     Router(config-line)# exec-timeout 2 30
+
+### Enable password checking
+
     Router(config-line)# login
+
+### Synchronized message output
+
     Router(config-line)# logging synchronous
-    Router(config-line)# exit
 
 ## Configure a primary terminal line
 
     Router(config)# line vty 0 4
+
+### Set a password
+
     Router(config-line)# password <PASSWORD_VTY>
+
+### Set the EXEC timeout
+
     Router(config-line)# exec-timeout 2 30
+
+### Enable password checking
+
     Router(config-line)# login
+
+### Synchronized message output
+
     Router(config-line)# logging synchronous
-    Router(config-line)# exit
 
 ## Copy from current system configuration to startup configuration
 
