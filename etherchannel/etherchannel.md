@@ -11,7 +11,7 @@
 
 ## Etherchannel/port bundling configuration
 
-    Switch(config-range-if)# channel-group 1 mode auto
+    Switch(config-range-if)# channel-group <GROUP_NUMBER> mode auto
 
 ## Enable the selected interface
 

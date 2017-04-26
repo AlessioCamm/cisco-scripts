@@ -4,7 +4,11 @@ and routers with Packet Tracer
 
 ## TODO list [5/5]
    - [x] Basic router
-   - [x] Serial link
-   - [x] SSH
-   - [x] OSPF
    - [x] EIGRP
+   - [x] EtherChannel
+   - [x] GLBP
+   - [x] HSRP
+   - [x] OSPF
+   - [x] Serial link
+   - [x] Spanning Tree
+   - [x] SSH
