@@ -2,7 +2,7 @@
 This directory regroups all the useful scripts for the configuration of switches
 and routers with Packet Tracer
 
-## TODO list [5/5]
+## TODO list [10/10]
    - [x] Basic router
    - [x] EIGRP
    - [x] EtherChannel
@@ -11,4 +11,5 @@ and routers with Packet Tracer
    - [x] OSPF
    - [x] Serial link
    - [x] Spanning Tree
+   - [x] Static routers
    - [x] SSH
