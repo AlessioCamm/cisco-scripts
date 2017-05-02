@@ -15,9 +15,13 @@
 
     Router(config-if)# standby 1 preempt
 
-### Set priority Tracking
+### Set group name (WARNING: not available on Packet Tracer)
 
-    Router(config-if)# standby 1 track <INTERFACE_NUMBER>
+    Router(config-if)# standby 1 name <HSRP_NUMBER>
+
+### Overthrow lower priority period Active routers (WARNING: not available on Packet Tracer)
+
+    Router(config-if)# standby 1 preempt delay minimum 300
 
 ## Configuring the standby router with the following hot standby attributes
 
