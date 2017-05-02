@@ -1,4 +1,4 @@
-# Spanning Tree troubleshooting
+# HSRP troubleshooting
 
 ## Useful commands to troubleshoot
 
