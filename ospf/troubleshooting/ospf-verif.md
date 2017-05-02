@@ -2,7 +2,7 @@
 
 ## Check the routing table
 
-### Show IP-EIGRP routing table
+### Show IP-OSPF routing table
 
     Router# show ip route ospf
     Router# show ipv6 route ospf
@@ -26,6 +26,6 @@
 
     Router# running-config
 
-### Disable OSPF
+## Disable OSPF
 
     Router(config)# no router ospf 1

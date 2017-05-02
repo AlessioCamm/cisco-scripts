@@ -35,6 +35,6 @@
 
     Router# running-config
 
-### Disable EIGRP
+## Disable EIGRP
 
     Router(config)# no router eigrp 1

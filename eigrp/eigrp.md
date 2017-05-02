@@ -22,7 +22,7 @@
 
     Router(config)# key chain <KEY_EIGRP>
 
-### Configure a key identifier (need to be the same on every router)
+### Configure a key identifier (same on every router)
 
     Router(config-keychain)# key 1
 

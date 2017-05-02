@@ -27,7 +27,7 @@
 ## Global activation of MD5 authentication
 
     Router(config)# interface Serial <SERIAL_ID>
-    Router(config-if)# ip ospf message-digest-key key md5 <MD5_PASSWORD
+    Router(config-if)# ip ospf message-digest-key key md5 <MD5_PASSWORD>
 
 ## Reset OSPF process
 
@@ -35,12 +35,12 @@
 
 ## Go further (not necessary)
 
-### Configures time between HELLO packets
+### Configures time between HELLO packets (same on every routers)
 
     Router(config)# interfaces Serial <SERIAL_ID>
     Router(config-if)# ip ospf hello-interval <HELLO_VALUE>
 
-### Configures interval after which a neighbor is declared dead
+### Configures interval after which a neighbor is declared dead (same on every routers)
 
 #### Be careful, dead interval > hello interval
 
