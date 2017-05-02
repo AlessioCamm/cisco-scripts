@@ -24,6 +24,24 @@
 
     Router(config-router)# network <IP> <OSPF_WILD_CARD_BITS> area 0
 
+## Global activation of MD5 authentication
+
+    Router(config)# interface Serial <SERIAL_ID>
+    Router(config-if)# ip ospf message-digest-key key md5 <MD5_PASSWORD
+
 ## Reset OSPF process
 
     Router# clear ip ospf process
+
+## Go further (not necessary)
+
+### Configures time between HELLO packets
+
+    Router(config)# interfaces Serial <SERIAL_ID>
+    Router(config-if)# ip ospf hello-interval <HELLO_VALUE>
+
+### Configures interval after which a neighbor is declared dead
+
+#### Be careful, dead interval > hello interval
+
+    Router(config-if)# ip ospf dead-interval <DEAD_VALUE>

@@ -32,6 +32,7 @@
 
 ### Enable authentication (to be done on all interfaces)
 
+    Router(config)# interfaces Serial <SERIAL_ID>
     Router(config-if)# ip authentication mode eigrp <AS_NUMBER> md5
     Router(config-if)# ip authentication key-chain eigrp <AS_NUMBER> <KEY_EIGRP>
 
