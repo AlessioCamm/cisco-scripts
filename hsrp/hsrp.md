@@ -15,11 +15,12 @@
 
     Router(config-if)# standby 1 preempt
 
-### Set group name (WARNING: not available on Packet Tracer)
+### Set group name (not available on Packet Tracer)
 
     Router(config-if)# standby 1 name <HSRP_NUMBER>
 
-### Overthrow lower priority period Active routers (WARNING: not available on Packet Tracer)
+
+### Overthrow lower priority period Active routers (not available on Packet Tracer)
 
     Router(config-if)# standby 1 preempt delay minimum 300
 
