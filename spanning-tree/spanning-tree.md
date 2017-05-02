@@ -18,7 +18,12 @@
 ## Enable an interface to move directly to forwarding on link up
 
     Switch(config-if)# interface range <BEGIN-END>
+    Switch(config-if-range)# switchport mode access
     Switch(config-if-range)# spanning-tree portfast
+
+### Set guard mode to root guard on interface
+
+    Switch(config-if)# spanning-tree guard root
 
 ### Enable BPDU guard for this interface
 
