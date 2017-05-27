@@ -27,4 +27,4 @@
 
 ### Enable BPDU guard for this interface
 
-    Switch(config-if-range)# spanning-tree bpduguard enable
+    Switch(config-if)# spanning-tree bpduguard enable
